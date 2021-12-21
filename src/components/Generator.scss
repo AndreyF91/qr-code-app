@@ -1,0 +1,27 @@
+.generator {
+    &__container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 3px;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+    &__input {
+        height: 30px;
+        width: 250px;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid rgb(194, 192, 192);
+        border-radius: 7px;
+        margin-bottom: 30px;
+        &:focus {
+            outline-color: rgb(75, 75, 75);
+        }
+    }
+}

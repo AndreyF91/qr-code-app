@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={() => setMode(!mode)}>Нажми</button>
-      {!mode ? <Generator /> : <Reader />}
+      {!mode ? <Reader /> : <Generator />}
     </div>
   );
 }
