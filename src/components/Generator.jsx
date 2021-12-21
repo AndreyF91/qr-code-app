@@ -5,7 +5,18 @@ import "./Generator.scss";
 const Generator = () => {
   const [inputValue, setInputValue] = useState("");
 
-  let screenSize = 270;
+  let canvasSize = 270;
+
+  function downloadImage() {
+    let canvas = document.getElementById("canvas");
+    let image = canvas
+      .toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+    let link = document.createElement("a");
+    link.download = "my-image.png";
+    link.href = image;
+    link.click();
+  }
 
   return (
     <div className="generator__container">
@@ -19,7 +30,16 @@ const Generator = () => {
           value={inputValue}
         />
         {inputValue ? (
-          <QRCode value={inputValue} size={screenSize} />
+          <div className="generator__inner">
+            <QRCode
+              id="canvas"
+              className="generator__canvas"
+              value={inputValue}
+              size={canvasSize}
+              onClick={downloadImage}
+            />
+            <span>Click img to download</span>
+          </div>
         ) : (
           <p>Введите текст</p>
         )}
