@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setMode(!mode)}>Нажми</button>
+      <button onClick={() => setMode(!mode)}>{!mode ? "QR-генератор": "QR-сканер"}</button>
       {!mode ? <Reader /> : <Generator />}
     </div>
   );
