@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QrReader from "react-qr-reader";
+import './Reader.scss';
 
 const Reader = () => {
   const [result, setResult] = useState("Результата нет");
@@ -13,7 +14,7 @@ const Reader = () => {
         delay={300}
         onError={setError}
         onScan={setResult}
-        style={{ width: "50%", margin: '0 auto' }}
+        style={{ width: "100%", margin: '30px auto', padding:'10px' }}
       />
       <p>{result}</p>
     </div>
