@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/qr-code-app/static/css/main.f3b714b5.css",
-    "main.js": "/qr-code-app/static/js/main.58ab6be6.js",
+    "main.css": "/qr-code-app/static/css/main.539af2c8.css",
+    "main.js": "/qr-code-app/static/js/main.ea5f01c9.js",
     "index.html": "/qr-code-app/index.html",
-    "main.f3b714b5.css.map": "/qr-code-app/static/css/main.f3b714b5.css.map",
-    "main.58ab6be6.js.map": "/qr-code-app/static/js/main.58ab6be6.js.map"
+    "main.539af2c8.css.map": "/qr-code-app/static/css/main.539af2c8.css.map",
+    "main.ea5f01c9.js.map": "/qr-code-app/static/js/main.ea5f01c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3b714b5.css",
-    "static/js/main.58ab6be6.js"
+    "static/css/main.539af2c8.css",
+    "static/js/main.ea5f01c9.js"
   ]
 }
