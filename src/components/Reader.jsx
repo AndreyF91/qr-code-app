@@ -13,7 +13,7 @@ const Reader = () => {
         delay={300}
         onError={setError}
         onScan={setResult}
-        style={{ width: "100%", margin: "30px auto", padding: "10px" }}
+        style={{ width: "100%", margin: "10px auto", padding: "0 10px" }}
       />
       {error ? <p className="reader__error">{error.message}</p> : null}
       <p
