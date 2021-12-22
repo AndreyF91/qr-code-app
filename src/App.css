@@ -7,6 +7,12 @@ html {
   margin-right: calc(-1 * (100vw - 100%));
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(221, 240, 225) 47%, rgb(125, 206, 208) 84%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .App {
   text-align: center;
@@ -14,7 +20,7 @@ html {
 }
 
 button {
-  margin-top: 20px;
+  margin: 40px 0;
   width: 150px;
   height: 50px;
   font-size: 19px;
