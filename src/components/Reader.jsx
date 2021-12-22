@@ -16,7 +16,7 @@ const Reader = () => {
         onScan={setResult}
         style={{ width: "100%", margin: '30px auto', padding:'10px' }}
       />
-      <p>{result}</p>
+      <p className="reader__result"  onClick={() => {navigator.clipboard.writeText(result)}}>{result}</p>
     </div>
   );
 };
